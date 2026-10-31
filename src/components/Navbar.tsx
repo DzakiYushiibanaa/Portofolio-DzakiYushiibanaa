@@ -42,7 +42,7 @@ export default function Navbar() {
           ))}
         </nav>
         <div className="flex items-center gap-space-sm">
-          <a href={profile.cv} download="CV_DzakiYushiibanaa.pdf" target="_blank" rel="noopener noreferrer" className="hidden items-center gap-1.5 rounded-lg border-[2.5px] border-on-surface bg-primary-container px-3.5 py-1.5 font-label-code text-label-code text-on-primary-container shadow-[3px_3px_0px_#1b1b1e] transition-all hover:-rotate-1 hover:shadow-[5px_5px_0px_#1b1b1e] active:translate-x-1 active:translate-y-1 active:shadow-none xl:inline-flex">
+          <a href={profile.cv} download="Dzaki-Yushiibanaa-CV.pdf" target="_blank" rel="noopener noreferrer" className="hidden items-center gap-1.5 rounded-lg border-[2.5px] border-on-surface bg-primary-container px-3.5 py-1.5 font-label-code text-label-code text-on-primary-container shadow-[3px_3px_0px_#1b1b1e] transition-all hover:-rotate-1 hover:shadow-[5px_5px_0px_#1b1b1e] active:translate-x-1 active:translate-y-1 active:shadow-none xl:inline-flex">
             <span>Download CV</span><Icon name="download" className="text-body-md" />
           </a>
           <button type="button" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Toggle menu"
@@ -59,7 +59,7 @@ export default function Navbar() {
           {links.map((l) => (
             <a key={l.id} href={`#${l.id}`} onClick={() => setOpen(false)} className={`rounded-xl border-[2px] border-on-surface px-4 py-2 font-label-code text-label-code ${active === l.id ? activeCls : "bg-surface-container-low"}`}>{l.label}</a>
           ))}
-          <a href={profile.cv} download="CV_DzakiYushiibanaa.pdf" target="_blank" rel="noopener noreferrer" className="rounded-xl border-[2px] border-on-surface bg-primary-container px-4 py-2 font-label-code text-label-code text-on-primary-container">Download CV</a>
+          <a href={profile.cv} download="Dzaki-Yushiibanaa-CV.pdf" target="_blank" rel="noopener noreferrer" className="rounded-xl border-[2px] border-on-surface bg-primary-container px-4 py-2 font-label-code text-label-code text-on-primary-container">Download CV</a>
         </nav>
       )}
     </header>

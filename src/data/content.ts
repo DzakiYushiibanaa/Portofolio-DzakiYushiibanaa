@@ -13,7 +13,7 @@ export const profile = {
   email: "dzakiyushibanaa@gmail.com",
   linkedin: "https://www.linkedin.com/in/dzaki-yushiibanaa",
   github: "https://github.com/DzakiYushiibanaa",
-  cv: "/CV_DzakiYushiibanaa.pdf",
+  cv: "/Dzaki-Yushiibanaa-CV.pdf",
   location: "Depok, Indonesia",
 };
 
