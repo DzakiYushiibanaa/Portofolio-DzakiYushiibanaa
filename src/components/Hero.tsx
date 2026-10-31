@@ -45,7 +45,7 @@ export default function Hero() {
           <div className="flex flex-wrap items-center gap-2.5 pt-1">
             <span className="mr-1 font-label-code text-label-code text-on-surface-variant">Find me on:</span>
             {socials.map((s) => (
-              <a key={s.label} href={s.href} target={s.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer"
+              <a key={s.label} href={s.href} target={s.href.startsWith("http") || s.href.endsWith(".pdf") ? "_blank" : undefined} rel="noopener noreferrer" download={s.href.endsWith(".pdf") ? "CV_DzakiYushiibanaa.pdf" : undefined}
                 className={`flex items-center gap-1.5 rounded-lg border-[2px] border-on-surface bg-surface-container-lowest px-3 py-1.5 font-label-badge text-label-badge shadow-[3px_3px_0px_#1b1b1e] transition-all active:translate-x-0.5 active:translate-y-0.5 active:shadow-none ${s.cls}`}>
                 <Icon name={s.icon} className="text-body-sm" /><span>{s.label}</span>
               </a>
